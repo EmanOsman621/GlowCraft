@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AllProducts from './AllProducts';
+
 
 export default function App() {
     const [lang, setLang] = useState('en');
