@@ -1,13 +1,198 @@
+:root {
+  --bg-color: #faf7f2;
+  --card-bg: #ffffff;
+  --text-main: #2c2a29;
+  --text-muted: #6b6375;
+  --border-color: #e5e4e7;
+  --accent-dark: #2f3024;
+  --accent-btn: #2c3531;
+  --input-bg: #fafafa;
+}
+
 body {
   margin: 0;
-  background-color: #FAF7F2;
-  color: #2C2A29;
-  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #root {
-  width: 100%;
-  min-height: 100vh;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 50px;
+}
+
+/* تنسيق العناوين الرئيسية للصفحات */
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+/* الكارت الرئيسي الحاضن للواجهة */
+.main-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navbar العلوي */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 18px;
+  color: var(--text-main);
+  font-size: 16px;
+}
+
+/* شبكة الـ Login و Register (جنب بعض) */
+.auth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.auth-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+}
+
+.auth-box h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.auth-box p.subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+/* تنسيق الحقول والأزرار */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--accent-dark);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* قسم Contact Us (عمودين) */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+}
+
+.contact-form h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  border-left: 1px solid var(--border-color);
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.info-item i {
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.info-item div h4 {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0 0 3px 0;
+}
+
+.info-item div p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .auth-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,117 +1,73 @@
 export default function Login() {
   return (
-    <div className="min-h-screen bg-[#FDFBF7] py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
-          Login & Comparison
-        </h2>
+    <div>
+      <div className="main-card">
+        {/* شريط التنقل العلوي */}
+        <header className="navbar">
+          <div className="logo">GlowCraft</div>
+          <nav className="nav-links">
+            <span>Home</span>
+            <span>Products</span>
+            <span>About</span>
+            <span>Contact</span>
+          </nav>
+          <div className="nav-icons">
+            <span>🔍</span>
+            <span>♡</span>
+            <span>🛒</span>
+            <span>👤</span>
+          </div>
+        </header>
 
-        {/* Container for Login & Register Side-by-Side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Login Card */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-            <h3 className="text-xl font-bold text-center text-gray-900 mb-2">
-              Login
-            </h3>
-            <p className="text-sm text-center text-gray-500 mb-6">
+        {/* الكرتين بجانب بعض (Login & Register) */}
+        <div className="auth-grid">
+          {/* نموذج تسجيل الدخول */}
+          <div className="auth-box">
+            <h2>Login</h2>
+            <p className="subtitle">
               Welcome Back!
+              <br />
+              Sign in to your GlowCraft account
             </p>
 
-            <form className="space-y-4">
-              <div>
-                <label className="block text-xs font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="name@example.com"
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#374151] text-sm"
-                />
-              </div>
+            <div className="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="name@example.com" />
+            </div>
 
-              <div>
-                <label className="block text-xs font-medium text-gray-700 mb-1">
-                  Password
-                </label>
-                <input
-                  type="password"
-                  placeholder="••••••••"
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#374151] text-sm"
-                />
-              </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input type="password" placeholder="••••••••" />
+            </div>
 
-              <div className="flex items-center justify-between text-xs text-gray-600">
-                <label className="flex items-center">
-                  <input
-                    type="checkbox"
-                    className="mr-1 rounded border-gray-300"
-                  />{" "}
-                  Remember me
-                </label>
-                <a href="#" className="hover:underline">
-                  Forgot password?
-                </a>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-2.5 bg-[#2C3E35] text-white rounded-lg font-medium text-sm hover:bg-[#1e2b24] transition-colors"
-              >
-                Login
-              </button>
-            </form>
+            <button className="submit-btn">Login</button>
           </div>
 
-          {/* Register Card */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-            <h3 className="text-xl font-bold text-center text-gray-900 mb-2">
-              Register
-            </h3>
-            <p className="text-sm text-center text-gray-500 mb-6">
+          {/* نموذج إنشاء حساب */}
+          <div className="auth-box">
+            <h2>Register</h2>
+            <p className="subtitle">
               Create Your Account
+              <br />
+              Join GlowCraft for a better discount journey
             </p>
 
-            <form className="space-y-4">
-              <div>
-                <label className="block text-xs font-medium text-gray-700 mb-1">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Eman Osman"
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#374151] text-sm"
-                />
-              </div>
+            <div className="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Eman Osman" />
+            </div>
 
-              <div>
-                <label className="block text-xs font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="name@example.com"
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#374151] text-sm"
-                />
-              </div>
+            <div className="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="name@example.com" />
+            </div>
 
-              <div>
-                <label className="block text-xs font-medium text-gray-700 mb-1">
-                  Password
-                </label>
-                <input
-                  type="password"
-                  placeholder="••••••••"
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#374151] text-sm"
-                />
-              </div>
+            <div className="form-group">
+              <label>Password</label>
+              <input type="password" placeholder="••••••••" />
+            </div>
 
-              <button
-                type="submit"
-                className="w-full py-2.5 bg-[#2C3E35] text-white rounded-lg font-medium text-sm hover:bg-[#1e2b24] transition-colors"
-              >
-                Create Account
-              </button>
-            </form>
+            <button className="submit-btn">Create Account</button>
           </div>
         </div>
       </div>
