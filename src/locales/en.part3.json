@@ -1,0 +1,44 @@
+{
+  "common": { "loading": "Loading...", "error": "Something went wrong. Please try again." },
+  "nav": { "home": "Home", "products": "Products", "about": "About", "contact": "Contact", "search": "Search", "account": "Account" },
+  "footer": { "tagline": "Your skin, our priority.", "quick": "Quick Links", "care": "Customer Care", "follow": "Follow Us", "faqs": "FAQs", "shipping": "Shipping", "returns": "Returns", "rights": "All rights reserved." },
+  "tracker": {
+    "short": "Ingredient Tracker",
+    "title": "Ingredient & Expiry Tracker",
+    "subtitle": "Know what's in your products and when to use them.",
+    "choose": "Choose a product",
+    "ingredients": "Ingredients",
+    "benefits": "Benefits",
+    "howToUse": "How to use",
+    "viewProduct": "View product",
+    "paoText": "Use within {{months}} months after opening.",
+    "openedOn": "When did you open it?",
+    "state": {
+      "good": "Good until {{date}} ({{days}} days left)",
+      "soon": "Expires soon: {{date}} ({{days}} days left)",
+      "expired": "Expired on {{date}} ({{days}} days ago). Time to replace it."
+    }
+  },
+  "wishlist": {
+    "title": "My Wishlist",
+    "count": "{{count}} items",
+    "clear": "Clear all",
+    "empty": "Your wishlist is empty.",
+    "browse": "Browse products",
+    "remove": "Remove from wishlist",
+    "addCompare": "Add to compare",
+    "inCompare": "Added to compare",
+    "compareNow": "Compare"
+  },
+  "compare": {
+    "title": "Compare Products",
+    "subtitle": "Select up to {{max}} products.",
+    "clear": "Clear",
+    "needTwo": "Select at least 2 products from your wishlist to compare.",
+    "goWishlist": "Back to wishlist",
+    "addFromWishlist": "Add from your wishlist:",
+    "remove": "Remove from comparison",
+    "limit": "You can compare up to {{max}} products. Remove one first.",
+    "rows": { "price": "Price", "skinType": "Skin type", "benefits": "Benefits", "ingredients": "Key ingredients", "pao": "Use within" }
+  }
+}

@@ -1,0 +1,6 @@
+.cmp { max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
+.cmp-msg { text-align: center; padding: 60px 16px; }
+.cmp-suggest { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; font-size: .9rem; color: var(--text-muted); }
+.cmp-suggest button { padding: 6px 14px; border-radius: 999px; border: 1px solid var(--primary); background: transparent; color: var(--primary); cursor: pointer; font: inherit; font-size: .85rem; }
+.cmp-back { margin-top: 16px; }
+.cmp-back a { color: var(--primary); }
