@@ -1,0 +1,16 @@
+.cp { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+.cp-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.cp-head h2 { margin: 0; font-size: 1.25rem; }
+.cp-head p { margin: 4px 0 0; font-size: .85rem; color: var(--text-muted); }
+.cp-head-actions { display: flex; align-items: center; gap: 12px; }
+.cp-clear { background: none; border: none; color: var(--text-muted); text-decoration: underline; cursor: pointer; font-size: .85rem; }
+.cp-btn { background: var(--primary); color: #fff; text-decoration: none; padding: 9px 20px; border-radius: 8px; font-size: .9rem; }
+.cp-hint { background: var(--bg); padding: 10px 14px; border-radius: 8px; font-size: .88rem; color: var(--text-muted); }
+.cp-scroll { overflow-x: auto; }
+.cp-table { width: 100%; min-width: 420px; border-collapse: collapse; font-size: .85rem; }
+.cp-table th, .cp-table td { padding: 10px; border-top: 1px solid var(--border); text-align: start; vertical-align: top; }
+.cp-table thead th { border-top: none; text-align: center; position: relative; padding-top: 18px; }
+.cp-table thead img { width: 84px; height: 100px; object-fit: cover; border-radius: 10px; display: block; margin: 0 auto 8px; background: var(--soft); }
+.cp-table thead a { color: var(--text); text-decoration: none; font-weight: 600; }
+.cp-table tbody th { color: var(--text-muted); font-weight: 500; width: 110px; }
+.cp-x { position: absolute; top: 0; inset-inline-end: 2px; background: none; border: none; color: var(--danger); cursor: pointer; font-size: .8rem; }

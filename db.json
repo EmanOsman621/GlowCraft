@@ -1,0 +1,25 @@
+{
+  "products": [
+    { "id": 1, "name": "Vitamin C Serum", "name_ar": "سيروم فيتامين سي", "price": 24.99, "image": "/images/vitamin-c-serum.svg",
+      "category": "Serums", "category_ar": "سيروم", "skinType": ["All skin types"], "skinType_ar": ["جميع أنواع البشرة"],
+      "ingredients": ["Vitamin C", "Hyaluronic Acid", "Niacinamide", "Aloe Vera"], "ingredients_ar": ["فيتامين سي", "حمض الهيالورونيك", "النياسيناميد", "الألوفيرا"],
+      "benefits": ["Brightens skin", "Hydrates", "Reduces dark spots", "Improves texture"], "benefits_ar": ["يفتح البشرة", "يرطب", "يقلل البقع الداكنة", "يحسّن الملمس"],
+      "howToUse": "Apply 2-3 drops to clean skin.", "howToUse_ar": "ضعي 2-3 قطرات على بشرة نظيفة.", "pao": 12 },
+    { "id": 2, "name": "Hyaluronic Acid Serum", "name_ar": "سيروم حمض الهيالورونيك", "price": 22.99, "image": "/images/hyaluronic-serum.svg",
+      "category": "Serums", "category_ar": "سيروم", "skinType": ["Dry", "Combination"], "skinType_ar": ["جافة", "مختلطة"],
+      "ingredients": ["Hyaluronic Acid", "Glycerin"], "ingredients_ar": ["حمض الهيالورونيك", "الجلسرين"],
+      "benefits": ["Deep hydration", "Plumps skin"], "benefits_ar": ["ترطيب عميق", "امتلاء البشرة"],
+      "howToUse": "Apply to damp skin morning and night.", "howToUse_ar": "ضعيه على بشرة رطبة صباحًا ومساءً.", "pao": 6 },
+    { "id": 3, "name": "Moisturizing Cream", "name_ar": "كريم مرطب", "price": 18.99, "image": "/images/moisturizing-cream.svg",
+      "category": "Moisturizers", "category_ar": "مرطبات", "skinType": ["Dry", "Normal"], "skinType_ar": ["جافة", "عادية"],
+      "ingredients": ["Shea Butter", "Ceramides", "Glycerin"], "ingredients_ar": ["زبدة الشيا", "السيراميدات", "الجلسرين"],
+      "benefits": ["Locks in moisture", "Soothes skin"], "benefits_ar": ["يحبس الرطوبة", "يهدئ البشرة"],
+      "howToUse": "Massage onto face and neck after serum.", "howToUse_ar": "دلكي الوجه والرقبة بعد السيروم.", "pao": 12 },
+    { "id": 4, "name": "Sunscreen SPF 50", "name_ar": "واقي شمس SPF 50", "price": 16.99, "image": "/images/sunscreen-spf50.svg",
+      "category": "Sunscreens", "category_ar": "واقي الشمس", "skinType": ["All skin types"], "skinType_ar": ["جميع أنواع البشرة"],
+      "ingredients": ["Zinc Oxide", "Vitamin E"], "ingredients_ar": ["أكسيد الزنك", "فيتامين إي"],
+      "benefits": ["Broad-spectrum protection", "Non-greasy"], "benefits_ar": ["حماية واسعة الطيف", "غير دهني"],
+      "howToUse": "Apply generously 15 minutes before sun exposure.", "howToUse_ar": "ضعيه بسخاء قبل التعرض للشمس بـ 15 دقيقة.", "pao": 6 }
+  ],
+  "wishlist": []
+}
