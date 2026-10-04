@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -182,3 +183,28 @@
     border-right-color: var(--border);
   }
 }
+=======
+:root {
+  --bg-main: #f9f6f0;
+  --bg-card: #ffffff;
+  --text-main: #222222;
+  --border-color: #e5e0d8;
+  --banner-bg: #f3eee3;
+}
+
+.dark-mode {
+  --bg-main: #121212;
+  --bg-card: #1e1e1e;
+  --text-main: #e0e0e0;
+  --border-color: #333333;
+  --banner-bg: #1a2621;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+>>>>>>> origin/hager-products

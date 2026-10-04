@@ -1,11 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "glowcraft",
+=======
+  "name": "finalproject2",
+>>>>>>> origin/hager-products
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
     "lint": "eslint . --ext js,jsx",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -31,6 +36,22 @@
     "gh-pages": "^6.3.0",
     "globals": "^17.12.0",
     "json-server": "^1.0.0-beta.15",
+=======
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+>>>>>>> origin/hager-products
     "vite": "^8.3.0"
   }
 }
