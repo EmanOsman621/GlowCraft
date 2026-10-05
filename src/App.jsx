@@ -4,6 +4,16 @@ import {
   Droplet, ArrowRight, ChevronRight, Facebook, Twitter, Instagram,
 } from "lucide-react";
 import { IMG } from "./images";
+
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/temporary/Navbar";
+import Footer from "./components/temporary/Footer";
+import Login from "./Eman/Login";
+import Contact from "./Eman/Contact";
+import IngredientTracker from "./pages/IngredientTracker/IngredientTracker";
+import Wishlist from "./pages/Wishlist/Wishlist";
+import Compare from "./pages/Compare/Compare";
+import TempProducts from "./pages/Temp/TempProducts";
 import "./App.css";
 
 function Photo({ src, alt, ...rest }) {
@@ -53,22 +63,6 @@ const categories = [
   { name: "Sunscreens", img: IMG.cats.sunscreens },
   { name: "Masks", img: IMG.cats.masks },
 ];
-
-function Header() {
-  return (
-    <header className="header">
-      <a className="logo" href="/">GlowCraft</a>
-      <nav className="nav">
-        {navLinks.map((l, i) => (
-          <a key={l} href="/" className={i === 0 ? "active" : ""}>{l}</a>
-        ))}
-      </nav>
-      <div className="icons">
-        <Search size={20} /><Heart size={20} /><ShoppingBag size={20} /><User size={20} />
-      </div>
-    </header>
-  );
-}
 
 function Hero() {
   return (
@@ -170,55 +164,32 @@ function Quiz() {
   );
 }
 
-const Pin = () => <span className="pin">P</span>;
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <div className="footer-grid">
-        <div>
-          <div className="logo light">GlowCraft</div>
-          <p className="tagline">Your skin. Our priority.</p>
-        </div>
-        <div>
-          <h4>Quick Links</h4>
-          {["Home", "Products", "About", "Contact"].map((l) => <a key={l} href="/">{l}</a>)}
-        </div>
-        <div>
-          <h4>Customer Care</h4>
-          {["FAQ", "Shipping", "Returns", "Support"].map((l) => <a key={l} href="/">{l}</a>)}
-        </div>
-        <div>
-          <h4>Follow Us</h4>
-          <div className="social">
-            <Facebook size={22} fill="#fff" /><Twitter size={22} fill="#fff" />
-            <Instagram size={22} /><Pin />
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="footer-bottom">
-        <span>© 2025 GlowCraft. All rights reserved.</span>
-        <div className="pay">
-          <span className="pay-box visa">VISA</span>
-          <span className="pay-box mc"><i /><i /></span>
-          <span className="pay-box paypal">PayPal</span>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
 export default function App() {
   return (
     <div className="page">
-      <Header />
-      <Hero />
-      <Features />
-      <Offers />
-      <Best />
-      <Categories />
-      <Quiz />
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Features />
+              <Offers />
+              <Best />
+              <Categories />
+              <Quiz />
+            </>
+          } />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/tracker" element={<IngredientTracker />} />
+          <Route path="/tracker/:id" element={<IngredientTracker />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/products" element={<TempProducts />} />
+          <Route path="/products/:id" element={<TempProducts />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
